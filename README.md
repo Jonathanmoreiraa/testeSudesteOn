@@ -1,7 +1,7 @@
 # testeSudesteOn
 Projeto criado para o teste prático da Sudeste Online.
 
-Para conseguir acessar o site, é necessário acessar o CMD do diretório e digitar ```composer update```
+Para conseguir acessar o site, é necessário acessar o CMD do diretório onde está o cakephp e digitar ```composer update```
 
 #### Instalação do banco de dados
 
