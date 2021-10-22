@@ -1,0 +1,153 @@
+/*CSS para o admin*/
+body {
+  background-color: #eaeef3;
+}
+.menu-header{
+  color: #FFF !important;
+}
+.sidebar{
+  min-width: 180px;
+  max-width: 180px;
+  transition: all 0.3s;
+}
+.sidebar .logo {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid white;
+  transition: all .3s;
+  padding-left: 52px;
+  background-color: white;
+}
+.cor{
+  background-color: #EC9140;
+  color: #FFF;
+}
+.menu-cor{
+  background-color: #EC9140;
+}
+.sidebar .logo .img-logo{
+  width: 65px;
+  height: 65px;
+} 
+.d-flex ul{
+  text-align: left;
+  
+}
+.sidebar ul li a{  
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+.sidebar ul li a:hover, .sidebar ul .active a{
+  color: #ecedee;
+  background-color: #ffa352;
+}
+.sidebar ul ul a{
+  padding-left: 2.5rem;
+  background-color:rgb(130, 146, 172);
+}
+/*.sidebar ul .active a{
+  usada para um item ficar com uma cor ativa/ destacada
+}*/
+
+/*Seletor utilizado para ativar o botão ocultar menu em PC*/ 
+.sidebar.toggled{
+    margin-left: -180px;/* Recua a barra lateral */
+}
+@media (min-width: 768px){/* telas acima de 768px*/
+  .sidebar{
+    min-height: calc(100vh - 56px);
+  }
+}
+@media (max-width: 768px){
+  .sidebar{
+    position: absolute;
+    z-index: 999;
+    transition: all .3s;
+    margin-left: -250px;
+  }
+  .sidebar .logo{
+    width: 100%;
+    height: 70px;
+    padding-left: 60px;
+  }
+  .sidebar .logo .img-logo{
+    width: 55px;
+    height: 55px;
+  } 
+  .sidebar.toggled{
+      margin-left: 0px;
+  }
+  .busca{
+    width: 60% !important;
+  }
+}
+.sidebar [data-toggle="collapse"]{
+  position: relative;
+}
+.sidebar [data-toggle="collapse"]:before{
+  content: "\f0d7";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  right: 1rem;
+}
+.sidebar [aria-expanded="true"]{
+  background-color:rgb(116, 128, 150);
+}
+.sidebar [aria-expanded="true"]:before{
+  content: "\f0d8";
+}
+.content{
+  width: 100%;
+}
+.titulo{
+  font-size: 2.0rem;
+}
+.btn-outline-warning:hover{
+  color: white;
+}
+
+.error-message{
+  color: #FF0000;
+}
+/*Ícone editar a imagem*/
+.img-perfil{
+  position: relative;
+  display: inline-block;
+}
+.img-perfil:hover .edit{
+  display: block;
+}
+.edit{
+  padding-top: 7px;
+  padding-right: 7px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: none;
+}
+.edit a{
+  color: #899cb8 !important;
+}
+.list-goup-item{
+  list-style: none;  
+}
+.list-group-item, .list-group-item:hover{ z-index: auto; }
+a:hover{
+  text-decoration: none;  
+}
+.btn-acess{
+    background-color:rgb(74, 82, 133);
+    color: white;
+}
+.btn-warning{
+  color: white;
+}
+.busca{
+  background-color: #FFF;
+  margin-bottom: 10px;
+  width: 480px;
+  float: right !important;
+}
